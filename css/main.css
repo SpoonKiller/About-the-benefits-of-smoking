@@ -1,0 +1,125 @@
+// ---------- VARS ---------- //
+@menu-font-color: #000000;
+@bg-color: #edeef0;
+
+
+// ----------- STYLES ------------ //
+html, body{
+    margin:0px;
+    padding:0px;
+    background-color: @bg-color;
+}
+
+.wrapper-include{
+    font-family: "Comic Sans MS";
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    &-header{
+        align-self: center;
+        border-bottom-style: solid;
+        border-bottom-width: 20px;
+        border-bottom-color: @bg-color;
+        position: fixed;
+        .wrapper-include;
+        width:75%;
+        background-image: url("img/title.jpg");
+        height: 150px;
+        &-menu{
+            height:100%;
+            &-menu-item{
+                 width: 22%;
+            &-logo {
+                 background-color: chocolate;
+             }
+            }
+         }
+
+    }
+
+    &-content{
+        .wrapper-include;
+         widht: auto;
+         height: 800px;
+        margin-top:200px;
+        display: flex;
+        align-items: flex-start;
+        &-leftboard{
+            align-self: flex-start;
+            margin-left: 0px;
+            background-color: peru;
+            width: 12.5%;
+            margin-right: 0px;
+            height:inherit;
+            font-size: 100%;
+            text-align: center;
+            height: auto;
+         }
+        &-main{
+            width: 74%;
+            padding-left: 1%;
+            align-self: center;
+            font-size: auto;
+            margin-left: 0px;
+            .wrapper-include;
+            background: #FFFFFF;
+            height: inherit;
+         }
+    }
+
+    &-footer{
+        position: fixed;
+        align-self: center;
+        .wrapper-include;
+        text-align: center;
+        font-style: oblique;
+    }
+}
+
+.wrapper-content-leftboard, .wrapper-content-main{
+    display: inline-flex;
+}
+
+.lit{
+    margin-top: -4px;
+    display: inline-table;
+    width: 22%;
+    font-size: auto;
+}
+
+a{
+    text-decoration: none;
+    color: @menu-font-color;
+    height: 150px;
+    width: 22%;
+
+    &:hover{
+        color: @menu-font-color;
+    }
+}
+
+.index{
+    width: 100%;
+    font-size: 110%;
+}
+
+.sigar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: stretch;
+}
+
+.super{
+    font-size: 400%;
+    text-align: center;
+    width: 100%;
+}
+
+.s1, .s2{
+    width: 100%;
+}
+
